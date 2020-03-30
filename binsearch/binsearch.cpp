@@ -17,5 +17,11 @@ inline int binsearch (int* array, int left, int right, int value)
             right = mid - 1;
         }
     }
+
+    for (int i = left; i <= right; ++i) { // проходимся руками по оставшемуся отрезку
+        if (array[i] == value) {
+            return i;
+        }
+    }
 }
 
